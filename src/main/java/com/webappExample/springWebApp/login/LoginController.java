@@ -1,3 +1,5 @@
+package com.webappExample.springWebApp.login;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,10 +31,7 @@ public class LoginController {
 		if(authenticationService.authenticate(name, password)) {
 		
 			model.put("name", name);
-			//Authentication 
-			//name - in28minutes
-			//password - dummy
-			
+				
 			return "welcome";
 		}
 		
